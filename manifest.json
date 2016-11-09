@@ -1,0 +1,25 @@
+{
+  "background": {
+    "persistent": true,
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "gmail_not_logged_in.png",
+	"default_popup": "popup.html"
+  },
+  "default_locale": "en",
+  "description": "Ext that will listen on port 8899 and can be used for ckecking unread notification count and list",
+  "icons": {
+    "128": "icon.png"
+  },
+  "name": "Notification Reader",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "webNavigation",
+	  "notifications",
+    "*://*.google.com/"
+   ],
+  "version": "1.0",
+  "manifest_version": 2
+}
