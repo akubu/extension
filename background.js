@@ -178,8 +178,8 @@ function getInboxCount(onSuccess, onError) {
         message: response.text[response.count-1].message
      }, function(notificationId) {});
 			localStorage.text=JSON.stringify(response);
-			alert(localStorage.text);
-			datax=JSON.parse(localStorage.text);
+			//alert(localStorage.text);
+			//datax=JSON.parse(localStorage.text);
 			//datax=response;
 			//alert(response.length);
             handleSuccess(response.count);
